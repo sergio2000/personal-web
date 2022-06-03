@@ -26,8 +26,7 @@ function App() {
       </Navbar>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="*" element={<Error/>} />
-        <Route path="/home" element={<Home/>} />
+        <Route path="www.sergio-acosta.com/*" element={<Error/>} />
       </Routes>
       </Router>
   );
