@@ -1,0 +1,37 @@
+
+.about-section {
+    margin-top: -30px;
+    text-align: center;
+    height: 500px;
+}
+.about-text-container {
+    margin-left: 10%;
+    width: 40%;
+}
+
+.intro {
+    font-size: 68px;
+}
+
+.links {
+    text-align: center;
+    margin: 90px;
+}
+a {
+    padding: 10px;
+}
+@media (max-width: 600px) {
+    .intro{
+    font-size: 35px;
+    }
+
+    .about-text-container {
+        display: inline;
+        justify-content: center;
+        text-align: left;
+    }
+
+.about-text-container p, h1{
+    padding: 0 50px;
+}
+}
