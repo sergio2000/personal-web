@@ -3,6 +3,7 @@ import { Container, Navbar, Nav, NavDropdown} from "react-bootstrap";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import Error from "./Error";
+import Newsletter from "./Newsletter";
 import "./styles.css";
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link as={Link} to="/">Home</Nav.Link>
+              <Nav.Link as={Link} to="/newsletter">Newsletter</Nav.Link>
               <Nav.Link href="#link"></Nav.Link>
               <NavDropdown title="" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Newsletter</NavDropdown.Item>
@@ -26,7 +27,7 @@ function App() {
       </Navbar>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="www.sergio-acosta.com/*" element={<Error/>} />
+        <Route path="/newsletter" element={<Newsletter/>} />
       </Routes>
       </Router>
   );
