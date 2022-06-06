@@ -13,6 +13,7 @@ import { FaLinkedin, FaTwitter } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import {motion} from  "framer-motion";
 import { useInView } from "react-intersection-observer";
+import background from "./images/background.png";
 const styles = {
     tada: {
       animation: 'x 1s',
@@ -20,6 +21,10 @@ const styles = {
     }
   }
 
+  var sectionStyle = {
+    backgroundImage: `url(${background})`,
+    backgroundSize: '1600px'
+ }
 function Home() {
   const [titleRef, titleInView] = useInView({
     triggerOnce: true,
@@ -29,22 +34,12 @@ function Home() {
         
         <div className="home">
     
-            <div style={{ height: 800}} className="intro p-5 d-flex flex-column bg-light text-dark  align-items-center">
+            <div style={sectionStyle} className="intro p-5 d-flex flex-column text-dark  align-items-center">
             <StyleRoot>
                 <div style={styles.tada}>
             <Image style={{width: 300, padding: 20, }} src={profile} roundedCircle />            
             </div>
             </StyleRoot>
-            <h1 className="fs-1" > Hello... </h1>
-        <p className="fs-1">My name is Sergio Acosta!</p>
-        <p className="changing-text">
-          I'm a{" "}
-          <Typical
-            loop={Infinity}
-            wrapper="b"
-            steps={["developer", 1000, "student", 1000]}
-          />
-        </p>
             </div>
             <div className="p-2 bg-dark text-dark ">
                 <Row>
@@ -64,7 +59,7 @@ description={data.description}
 
             </div>
             
-            <div class="p-3 mb-2 bg-light text-dark">
+            <div class="p-1 mb-2 bg-light text-dark">
  
                 <motion.div ref={titleRef} animate={{ scale: titleInView ? 1 : 0 }} transition={{ duration: 0.5 }} className="about-text-container">
                 <h1>About Me</h1>
