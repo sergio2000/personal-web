@@ -46,10 +46,10 @@ function Home() {
           />
         </p>
             </div>
-            <div className="p-5 bg-dark text-dark ">
+            <div className="p-2 bg-dark text-dark ">
                 <Row>
   {projects.map((data) => (
-    <Col style={{padding: '50px',display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
+    <Col style={{padding: '20px',display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
      <CardData
      image={data.image}
      link={data.link}
