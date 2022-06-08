@@ -2,7 +2,7 @@ import {Card, Button} from "react-bootstrap";
 import React from "react";
 function CardData(props) {
     return(
-        <Card border="primary" style={{ width: '16rem', flex: 1 }}className="text">
+        <Card border="primary" style={{ width: '16rem', flex: 1 }}className="text text-dark">
         <Card.Img variant="top" src={props.image} />
         <Card.Body>
           <Card.Title>{props.project}</Card.Title>

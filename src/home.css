@@ -1,4 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+.name {
+    font-family: 'Righteous', cursive;
+}
 .about-section {
     margin-top: -30px;
     text-align: center;
@@ -7,37 +10,28 @@
 .about-text-container {
     margin-left: 8%;
     width: 40%;
-
-
+}
+.profile-img {
+    text-align: center;
 }
 
-.intro {
-    font-size: 68px;
-    margin-top: 50px;
-    height: 700px;
+a {
+    padding: 3px;
 }
+
 .intro-text {
     color: aliceblue;
 }
 .links {
     text-align: center;
     margin: 90px;
+    padding: 2px;
 }
-a {
-    padding: 8px;
-}
-@media (max-width: 600px) {
 
-    a {
-        padding: 5px;
-    }
-    .about-text-container {
-        display: inline;
-        justify-content: center;
-        text-align: left;
-    }
+    
+    
 
-.about-text-container p, h1{
-    padding: 0 50px;
-}
+.link {
+    size: 3rem;
+    padding: 2px;
 }

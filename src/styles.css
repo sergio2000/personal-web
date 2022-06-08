@@ -2,3 +2,6 @@
 .logoName {
     font-family: 'Fredoka One', cursive;
 }
+a {
+    text-decoration: none;
+}
